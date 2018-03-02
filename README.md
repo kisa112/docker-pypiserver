@@ -25,7 +25,7 @@ docker가 설치된 머신에서 다음과 같은 명령으로 간단히 실행�
 
 다음과 같은 환경변수를 이용하여 환경을 다룰 수 있습니다:
 
-* ``PYPI_ROOT``: 패키지가 저장되고 다루어딜 파일 경로입니다. 디폴트는 ``/pypi`` 입니다.
+* ``PYPI_ROOT``: 패키지가 저장되고 다루어질 파일 경로입니다. 디폴트는 ``/pypi`` 입니다.
 * ``PYPI_PORT``: 서비스 포트 입니다. 디폴트는 ``80`` 입니다.
 * ``PYPI_PASSWD_FILE``: 인증 파일을 가리킵니다. 디폴트는 ``/pypi/.htpasswd`` 입니다.
 * ``PYPI_OVERWRITE``: 이미 존재하는 패키지를 덮어 쓸지에 대한 플래그입니다. 디폴트는 ``false`` 입니다.
@@ -69,7 +69,7 @@ PyPI 서비스가 정상적으로 동작하고 있고, 사용자 이름과 암�
 
     pip install -d /pypi pkgname
 
-마약 requirements.txt를 이용한 여러개의 패키지를 한꺼번에 등록하고자 한다면, 다음과 같이 합니다.
+만약 requirements.txt를 이용한 여러개의 패키지를 한꺼번에 등록하고자 한다면, 다음과 같이 합니다.
 
     pip install -d /pypi -r requirements.txt
 
